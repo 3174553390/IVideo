@@ -7,10 +7,23 @@
         <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleJvm" value="Embedded JDK" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/AdvancedAudioProcessing" />
+            <option value="$PROJECT_DIR$/AdvancedStreaming" />
+            <option value="$PROJECT_DIR$/AdvancedVideoProcessing" />
+            <option value="$PROJECT_DIR$/CommonFeatures" />
+            <option value="$PROJECT_DIR$/CommonTools" />
+            <option value="$PROJECT_DIR$/DebugAndConfig" />
+            <option value="$PROJECT_DIR$/KeyCenter" />
+            <option value="$PROJECT_DIR$/Others" />
+            <option value="$PROJECT_DIR$/Quickstart" />
+            <option value="$PROJECT_DIR$/Scenes" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/main" />
+            <option value="$PROJECT_DIR$/search" />
           </set>
         </option>
       </GradleProjectSettings>

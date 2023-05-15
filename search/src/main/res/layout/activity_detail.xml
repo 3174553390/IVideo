@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.DetailActivity">
+        <com.shuyu.gsyvideoplayer.video.StandardGSYVideoPlayer
+            android:id="@+id/video_decoder"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+        </com.shuyu.gsyvideoplayer.video.StandardGSYVideoPlayer>
+        <LinearLayout
+            app:layout_constraintTop_toBottomOf="@id/video_decoder"
+            android:id="@+id/ll_home_detail_tabandbullet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tab_home_detail_type"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                app:tabIndicatorColor="@color/lightgrey"
+                app:tabIndicatorFullWidth="false"
+                app:tabIndicatorHeight="4dp"
+                app:tabSelectedTextColor="@color/crimson">
+            </com.google.android.material.tabs.TabLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_home_detail_danmu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/home_detail_et_bg"
+                    android:hint="发送弹幕"
+                    android:padding="3dp"
+                    android:textSize="@dimen/sp_14"></TextView>
+
+                <Switch
+                    android:id="@+id/switch_home_detail_bulletscreen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:checked="true"
+                    android:showText="true"
+                    android:switchTextAppearance="@style/SwitchTextAppearance"
+                    android:textAlignment="textEnd"
+                    android:textOff="OFF"
+                    android:textOn="ON"></Switch>
+            </LinearLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_home_detail_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </FrameLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

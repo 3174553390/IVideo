@@ -16,3 +16,15 @@ dependencyResolutionManagement {
 }
 rootProject.name = "IVideo"
 include ':app'
+include ':search'
+include ':AdvancedStreaming'
+include ':CommonTools'
+include ':Others'
+include ':Quickstart'
+include ':main'
+include ':DebugAndConfig'
+include ':KeyCenter'
+include ':AdvancedVideoProcessing'
+include ':AdvancedAudioProcessing'
+include ':CommonFeatures'
+include ':Scenes'

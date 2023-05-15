@@ -1,0 +1,11 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="home_icon_wh">35dp</dimen>
+    <dimen name="home_subtitle_txtsize">18sp</dimen>
+    <dimen name="home_small_txtsize">12sp</dimen>
+    <dimen name="home_item_txtsize">14sp</dimen>
+    <dimen name="home_simpleinfo_itemheight">40dp</dimen>
+    <dimen name="home_video_height">260dp</dimen>
+    <dimen name="home_detail_videotool_margin">15dp</dimen>
+    <dimen name="home_detail_bulletscreen_txtsize">14sp</dimen>
+</resources>
