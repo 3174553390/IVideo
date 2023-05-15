@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/rl_home_detail_video"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.shuyu.gsyvideoplayer.video.StandardGSYVideoPlayer
+                android:id="@+id/gsy_home_detail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></com.shuyu.gsyvideoplayer.video.StandardGSYVideoPlayer>
+
+            <FrameLayout
+                android:id="@+id/dv_home_detail"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_200"></FrameLayout>
+
+            <ImageView
+                android:id="@+id/iv_home_detail_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="@dimen/home_detail_videotool_margin"
+                android:layout_marginTop="@dimen/home_detail_videotool_margin"
+                android:layout_marginEnd="@dimen/home_detail_videotool_margin"
+                android:layout_marginBottom="@dimen/home_detail_videotool_margin"
+                android:src="@drawable/ic_home_back"></ImageView>
+            <TextView
+                android:id="@+id/tv_detail_title"
+                android:text="标题title"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="@dimen/home_detail_videotool_margin"
+                android:layout_marginEnd="@dimen/home_detail_videotool_margin"
+                android:layout_marginBottom="@dimen/home_detail_videotool_margin"
+                android:src="@drawable/ic_home_back">
+            </TextView>
+            <ImageView
+                android:id="@+id/iv_home_detail_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/iv_home_detail_tv"
+                android:layout_marginTop="@dimen/home_detail_videotool_margin"
+                android:layout_marginRight="40dp"
+                android:src="@drawable/ic_home_search"></ImageView>
+
+            <ImageView
+                android:id="@+id/iv_home_detail_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/iv_home_detail_more"
+                android:layout_marginTop="@dimen/home_detail_videotool_margin"
+                android:layout_marginRight="40dp"
+                android:src="@drawable/ic_home_live_tv"></ImageView>
+
+            <ImageView
+                android:id="@+id/iv_home_detail_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="@dimen/home_detail_videotool_margin"
+                android:src="@drawable/ic_home_more"></ImageView>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:layout_alignParentBottom="true">
+
+                <ImageView
+                    android:id="@+id/like"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:src="@drawable/like_while"
+                    app:layout_constraintLeft_toLeftOf="parent"></ImageView>
+
+                <ImageView
+                    android:id="@+id/comment"
+                    android:layout_width="25dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/comment_whlie"
+                    app:layout_constraintLeft_toRightOf="@id/like"></ImageView>
+
+                <ImageView
+                    android:id="@+id/danmu"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/danmu"
+                    app:layout_constraintLeft_toRightOf="@id/comment"></ImageView>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/ll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    app:layout_constraintRight_toRightOf="parent">
+
+                    <ImageView
+                        android:id="@+id/resolution_ratio"
+                        android:layout_width="30dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/resolution_ratio"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="720P"
+                        android:textColor="@color/white"
+                        android:textSize="20dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toRightOf="@id/resolution_ratio"
+                        app:layout_constraintTop_toTopOf="parent"></TextView>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/kk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/dp_10"
+                    app:layout_constraintRight_toLeftOf="@id/ll">
+
+                    <ImageView
+                        android:id="@+id/double_speed"
+                        android:layout_width="30dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/double_speed"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="倍速"
+                        android:textColor="@color/white"
+                        android:textSize="20dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toRightOf="@id/double_speed"
+                        app:layout_constraintTop_toTopOf="parent"></TextView>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/dp_10"
+                    app:layout_constraintRight_toLeftOf="@id/kk">
+
+                    <ImageView
+                        android:id="@+id/subtitle"
+                        android:layout_width="30dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/subtitle"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+                    <TextView
+                        android:id="@+id/ii"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="字幕"
+                        android:textColor="@color/white"
+                        android:textSize="20dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toRightOf="@id/subtitle"
+                        app:layout_constraintTop_toTopOf="parent"></TextView>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </RelativeLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/oo"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:background="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50">
+            <ImageView
+                android:id="@+id/happle"
+                android:src="@drawable/happle"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_width="@dimen/dp_30"
+                android:layout_height="match_parent">
+            </ImageView>
+            <EditText
+                android:id="@+id/ed_danmu"
+                android:background="@drawable/shape_ed"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginRight="@dimen/dp_10"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/happle"
+                app:layout_constraintRight_toLeftOf="@+id/send"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+            </EditText>
+            <TextView
+                android:id="@+id/send"
+                android:text="发送"
+                android:textSize="@dimen/sp_16"
+                android:textColor="@color/white"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:textStyle="bold"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/ed_danmu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

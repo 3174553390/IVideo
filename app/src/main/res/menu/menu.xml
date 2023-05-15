@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/bottom_home" android:title="" android:icon="@drawable/one"/>
+    <item android:id="@+id/bottom_videoTV" android:title="" android:icon="@drawable/two"/>
+    <item android:id="@+id/bottom_add" android:title="" android:icon="@drawable/three"/>
+    <item android:id="@+id/bottom_message" android:title="" android:icon="@drawable/four"/>
+    <item android:id="@+id/bottom_me" android:title="" android:icon="@drawable/five"/>
+</menu>
